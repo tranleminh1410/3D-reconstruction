@@ -1,5 +1,5 @@
 """
-STEP 2: Feature Extraction & Matching dùng pycolmap 4.0.4.
+STEP 2: Feature Extraction & Matching.
 """
 
 import pycolmap

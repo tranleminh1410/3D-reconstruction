@@ -1,5 +1,5 @@
 """
-STEP 3: Incremental SfM + Bundle Adjustment dùng pycolmap 4.0.4.
+STEP 3: Incremental SfM + Bundle Adjustment 
 Output: Sparse point cloud 360° + camera frustums trong Open3D.
 """
 

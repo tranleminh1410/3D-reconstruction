@@ -1,7 +1,6 @@
 """
 STEP 4: Dense Reconstruction — Hybrid Pipeline.
-COLMAP poses (R, t chuẩn xác) + Optical Flow (Lucas-Kanade) + Triangulation.
-Không cần CUDA. Khắc phục hoàn toàn lỗi streaking của SGBM.
+
 """
 
 import pycolmap
@@ -16,17 +15,17 @@ from config import O3D_CONFIG
 from step1_loader import setup_directories
 
 # ─────────────────────────────────────────────
-# CẤU HÌNH — ĐÃ TỐI ƯU
+# CẤU HÌNH
 # ─────────────────────────────────────────────
 IMAGE_DIR  = Path("data/images")
 OUTPUT_DIR = Path("output")
 SPARSE_DIR = OUTPUT_DIR / "sparse" / "0"
 
-PIXEL_STEP    = 4    # Giảm từ 6 → 4: lưới dày hơn 2.25x, nhiều điểm hơn
+PIXEL_STEP    = 4    
 PROCESS_WIDTH = 640
 Z_MIN         = 0.01
 Z_MAX         = 50.0
-MAX_IMAGES    = 312  # Dùng TẤT CẢ 312 ảnh thay vì 120
+MAX_IMAGES    = 312  
 
 
 # ─────────────────────────────────────────────

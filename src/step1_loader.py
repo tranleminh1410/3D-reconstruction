@@ -1,5 +1,5 @@
 """
-BƯỚC 1: Khởi tạo project và đọc tập dữ liệu ảnh đầu vào.
+STEP 1: Khởi tạo project và đọc tập dữ liệu ảnh đầu vào.
 """
 
 import cv2

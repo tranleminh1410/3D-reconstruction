@@ -1,7 +1,7 @@
 """
 STEP 5: Mesh Generation — Poisson Surface Reconstruction + Visualization.
 Input : dense_point_cloud.ply (từ Step 4)
-Output: mesh_model.ply — lưới bề mặt 3D hoàn chỉnh có màu
+Output: mesh_model.ply — lưới bề mặt 3D hoàn chỉnh 
 """
 
 import open3d as o3d
@@ -17,8 +17,8 @@ from step1_loader import setup_directories
 # CẤU HÌNH — ĐÃ TỐI ƯU
 # ─────────────────────────────────────────────
 OUTPUT_DIR     = Path("output")
-POISSON_DEPTH  = 9     # Tăng từ 8 → 9: chi tiết hơn
-TRIM_QUANTILE  = 0.25  # Giảm từ 0.05 → 0.02: giữ nhiều mesh hơn, ít rách hơn
+POISSON_DEPTH  = 9     
+TRIM_QUANTILE  = 0.25  
 NORMAL_MAX_NN  = 30
 
 
