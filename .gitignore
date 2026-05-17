@@ -1,0 +1,11 @@
+# Bỏ qua môi trường ảo
+venv_3d/
+venv/
+
+# Bỏ qua thư mục chứa ảnh gốc và kết quả 3D nặng
+data/
+output/
+
+# Bỏ qua các file rác của Python
+__pycache__/
+*.pyc
